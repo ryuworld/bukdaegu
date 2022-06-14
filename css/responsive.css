@@ -1,0 +1,437 @@
+/* Desktop */
+@media all and (min-width:1024px) {
+    .swiper-group{
+        padding: 50px;
+    }
+    .swiper-slide {
+        padding: 90px 30px;
+    }
+}
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .con1>div{
+        flex-wrap: wrap;
+    }
+    
+    .w1280 {
+        padding: 0 30px;
+    }
+
+    .swiper-group {
+        flex: 0 0 70%;
+        padding: 50px 0;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        padding: 0;
+    }
+
+    .swiper-slide a>div {
+        padding: 30px;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(1) {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(2) {
+        font-size: 2.8rem;
+        line-height: 120%;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(3) {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide .slide-img img {
+        width: 100%;
+    }
+
+    .con1>div .swiper-button-next,
+    .con1>div .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-pagination {
+        top: 93%;
+    }
+
+    .painting {
+        flex: 0 0 25%;
+    }
+
+    .painting .painting-inner {
+        padding: 20px;
+    }
+
+    .painting-inner .painting-text>img,
+    .painting-inner .painting-btn>img {
+        width: 60%;
+        padding: 0;
+    }
+
+    .painting-inner .painting-btn a {
+        font-size: 1.3rem;
+        padding: 5px 10px;
+    }
+
+    .map,
+    .data {
+        flex: 0 0 90%;
+        margin: 0 auto;
+    }
+
+    .map {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .big-data {
+        flex: 0 0 53%;
+    }
+
+    .public-data {
+        flex: 0 0 45%;
+    }
+
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width: 767px) {
+    .con1 {
+        padding-bottom: 50px;
+    }
+
+    .con1>div{
+        flex-wrap: wrap;
+    }
+
+    .w1280 {
+        padding: 0;
+    }
+
+    .swiper-group {
+        flex: 0 0 80%;
+        margin: 0 auto;
+        position: relative;
+        padding: 50px 0;
+    }
+
+    .swiper-slide{
+        background: url("../img/slide_back2.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .swiper-slide a>div {
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .swiper-slide a>div .slide-text {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .swiper-slide a>div .slide-img {
+        flex: 0 0 100%;
+    }
+
+    .swiper-slide a>div .slide-img img {
+        width: 100%;
+    }
+
+    .slide11 a>div .slide-img img {
+        width: 87.5%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(1) {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(2) {
+        font-size: 2.5rem;
+        line-height: 120%;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(3) {
+        margin-bottom: 20px;
+    }
+
+    .con1>div .swiper-button-next,
+    .con1>div .swiper-button-prev {
+        display: none;
+    }
+    .painting {
+        flex: 0 0 80%;
+        margin: 0 auto;
+    }
+
+    .painting .painting-inner p {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .painting .painting-inner a {
+        font-size: 1.3rem;
+    }
+
+    .map,
+    .data {
+        flex: 0 0 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .map {
+        padding-left: 0;
+    }
+
+    .map-inner {
+        background-position: 20% bottom;
+        padding: 20px;
+    }
+
+    .map-text {
+        flex: 0 0 50%;
+    }
+
+    .map-text h2 {
+        font-size: 2.3rem;
+        color: #333;
+    }
+
+    .map-text p {
+        color: #333;
+    }
+
+    .map-btn {
+        flex: 0 0 45%;
+    }
+
+    .map-btn ul li {
+        flex: 0 0 49%;
+    }
+
+
+
+    .data-top .big-data a,
+    .data-top .public-data a {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        flex-direction: column;
+
+    }
+
+    .big-data,
+    .public-data {
+        flex: 0 0 100%;
+    }
+
+    .big-text,
+    .public-text {
+        text-align: center;
+    }
+
+    .new-statistics {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .new-statistics caption,
+    .new-statistics caption a i {
+        font-size: 2rem;
+    }
+
+    .new-statistics tbody tr td,
+    .new-statistics tbody tr td a {
+        font-size: 1.3rem;
+    }
+
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width:480px) {
+    .con1>div{
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+    
+    .w1280 {
+        padding: 0;
+    }
+
+    .swiper-group {
+        flex: 0 0 80%;
+        margin: 0 auto;
+        position: relative;
+        padding: 50px 0;
+    }
+
+    .swiper-slide{
+        height: 320px;
+        background: url("../img/slide_back2.png") no-repeat center;
+        background-size: cover;
+        padding: 50px 0;
+    }
+
+    .swiper-slide a>div {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .swiper-slide a>div .slide-text {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .swiper-slide a>div .slide-img {
+        flex: 0 0 100%;
+    }
+
+    .swiper-slide a>div .slide-img img {
+        width: 100%;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(1) {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(2) {
+        font-size: 1.8rem;
+        line-height: 120%;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(2) span{
+       color: #ffc143;
+    }
+
+    .swiper-slide .slide-text p:nth-of-type(3) {
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide .slide-img {
+        width: calc(100vw - 80%);
+        margin: 0 auto;
+    }
+
+    .swiper-slide .slide-img img {
+        width: 100%;
+    }
+
+    .con1>div .swiper-button-next,
+    .con1>div .swiper-button-prev {
+        display: none;
+    }
+
+
+
+    .painting {
+        flex: 0 0 80%;
+        margin: 0 auto;
+    }
+
+    .painting p {
+        display: none;
+    }
+
+    .painting .painting-inner a {
+        font-size: 1.3rem;
+    }
+
+    .map,
+    .data {
+        flex: 0 0 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .map {
+        padding-left: 0;
+    }
+
+    .map-inner {
+        background-size: cover;
+        background-position: center bottom;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .map-text {
+        flex: 0 0 55%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .map-text h2 {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .map-text p {
+        color: #333;
+    }
+
+    .map-btn {
+        flex: 0 0 40%;
+    }
+
+    .map-btn ul li {
+        flex: 0 0 49%;
+    }
+
+    .map-btn ul li a img {
+        display: none;
+    }
+
+    .data-top .big-data a,
+    .data-top .public-data a {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        flex-direction: column;
+
+    }
+
+    .big-data,
+    .public-data {
+        flex: 0 0 100%;
+    }
+
+    .big-data .big-text h3,
+    .public-data .public-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .big-text,
+    .public-text {
+        text-align: center;
+    }
+
+    .new-statistics {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .new-statistics caption,
+    .new-statistics caption a i {
+        font-size: 2rem;
+    }
+
+    .new-statistics tbody tr td,
+    .new-statistics tbody tr td a {
+        font-size: 1.3rem;
+    }
+}

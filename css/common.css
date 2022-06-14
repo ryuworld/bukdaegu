@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/*  */
+.w1280 {
+    max-width: 1480px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+/* ------------------- mainContainer ---------------------------- */
+
+/* slideSection */
+.con1 {
+    background: url("../img/slide_section_back.png"), linear-gradient(to bottom, #c2e9fb, #a1c4fd);
+    position: relative;
+}
+
+.con1>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-group {
+    flex: 0 0 78%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide {
+    position: relative;
+    background: url("../img/slide_back.png") no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.swiper-slide a>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-slide a>div .slide-text {
+    flex: 0 0 45%;
+}
+
+.swiper-slide a>div .slide-img {
+    flex: 0 0 54%;
+}
+
+.swiper-slide a>div .slide-img img {
+    width: 100%;
+}
+
+.slide11 a div .slide-text p:nth-of-type(2) span:nth-of-type(3),
+.slide11 a div .slide-text p:nth-of-type(2) span:nth-of-type(4) {
+    color: #c54e4e;
+}
+
+.slide11 a div .slide-text p:nth-of-type(2) span:nth-of-type(1),
+.slide11 a div .slide-text p:nth-of-type(2) span:nth-of-type(3),
+.slide13 a div .slide-text p:nth-of-type(2) span:nth-of-type(1) {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.swiper-slide .slide-text p:nth-of-type(1) {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.swiper-slide .slide-text p:nth-of-type(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 120%;
+}
+
+.swiper-slide .slide-text p:nth-of-type(2) span {
+    font-size: 2.8rem;
+    color: #034dab;
+}
+
+
+.swiper-slide .slide-text p:nth-of-type(3) {
+    font-size: 1.3rem;
+    color: #aaa;
+}
+
+.swiper-pagination {
+    top: 94%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+/* painting */
+.painting {
+    flex: 0 0 20%;
+}
+
+.painting .painting-inner {
+    background: url("../img/painting_back.png") no-repeat top center, #ffc143;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px;
+}
+
+.painting-inner .painting-text>img,
+.painting-inner .painting-btn>img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 1px 0;
+}
+
+.painting-inner .painting-text p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.painting .painting-inner a {
+    display: block;
+    width: 70%;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff9c00;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.painting .painting-inner a img {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* map */
+.con2 {
+    padding: 50px 0px;
+}
+
+.con2>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.map,
+.data {
+    flex: 0 0 48.5%;
+}
+
+.map {
+    padding-left: 50px;
+}
+
+.map-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    background: url("../img/map.png") no-repeat;
+    background-size: cover;
+    background-color: #f8f8f8;
+    box-shadow: 5px 5px 10px #aaa;
+}
+
+.map-text {
+    flex: 0 0 49%;
+    color: #fff;
+}
+
+.map-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.map-text p {
+    font-size: 1.3rem;
+}
+
+.map-btn {
+    flex: 0 0 49%;
+    right: 40px;
+}
+
+.map-btn ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.map-btn ul li {
+    flex: 0 0 30%;
+    margin-bottom: 12px;
+}
+
+.map-btn ul li:nth-child(7),
+.map-btn ul li:nth-child(8),
+.map-btn ul li:nth-child(9) {
+    margin-bottom: 0px;
+}
+
+.map-btn ul li a {
+    display: block;
+    padding: 10px 0px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+}
+
+.map-btn ul li a:hover {
+    background-color: rgba(255, 196, 92, 1);
+    transition: 0.3s;
+}
+
+.map-btn ul li a img {
+    margin-bottom: 10px;
+}
+
+.map-btn ul li a span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* data */
+.data-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.data-top .big-data {
+    flex: 0 0 55%;
+}
+
+.data-top .public-data {
+    flex: 0 0 43%;
+}
+
+.data-top .big-data a,
+.data-top .public-data a {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-top .big-data a:hover,
+.data-top .public-data a:hover {
+    background-color: rgba(255, 196, 92, 0.9);
+    transition: 0.3s;
+}
+
+.big-data a .big-icon,
+.public-data a .public-icon {
+    margin-right: 15px;
+}
+
+.big-data .big-text h3,
+.public-data .public-text h3 {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.big-data .big-text p,
+.public-data .public-text p {
+    font-size: 1.3rem;
+}
+
+.new-statistics {
+    width: 100%;
+}
+
+.new-statistics caption {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.new-statistics caption a i {
+    font-size: 21px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+}
+
+.new-statistics tbody tr td {
+    font-size: 1.6rem;
+    padding: 3px 0;
+    white-space: nowrap;
+}
+
+.new-statistics tbody tr td:last-child {
+    text-align: right;
+}
+
+.new-statistics tbody tr td a {
+    display: block;
+    width: 70%;
+    font-size: 1.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
