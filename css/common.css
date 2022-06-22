@@ -80,6 +80,15 @@ img {
     width: 100%;
 }
 
+/* 영역별 밝기 설정 */
+.slide_list > li:after {position: absolute;content:'';top: 0;left: 0;width: 100%;height: 100%;background:rgba(0,0,0,0.6);transition: all 0.3s;opacity: 0;opacity: 1; border-radius: 20px;}
+.slide_list > li.swiper-slide-next:after,
+.slide_list > li.swiper-slide-prev:after,
+.slide_list > li.swiper-slide-duplicate-next:after,
+.slide_list > li.swiper-slide-duplicate-prev:after {background:rgba(0,0,0,0.4); border-radius: 20px;} 
+.slide_list > li.swiper-slide-active:after,
+.slide_list > li.swiper-slide-duplicate-active:after{opacity: 0;}
+
 .slide11 a div .slide-text p:nth-of-type(2) span:nth-of-type(3),
 .slide11 a div .slide-text p:nth-of-type(2) span:nth-of-type(4) {
     color: #c54e4e;

@@ -53,9 +53,8 @@ function initSwiper(effect) {
       },
       1200: {
         slidesPerView: "2",
-        spaceBetween: 20,
         coverflowEffect: {
-          stretch: 297,
+          stretch: 290,
         },
         speed: 600,
         autoplay: {
